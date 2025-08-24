@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Purge Diary — Beta Waitlist</title>
+  <meta name="description" content="Purge Diary is a private, AI-assisted journal and mental workbench. Join the beta to get early access." />
+  <meta name="theme-color" content="#0f172a" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Purge Diary — Beta Waitlist" />
+  <meta property="og:description" content="A private, AI-assisted journal and mental workbench. Join the beta." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <h1>Purge Diary</h1>
+        <span class="badge">Beta</span>
+      </div>
+      <nav>
+        <a href="#features">Features</a>
+        <span aria-hidden="true" class="dot">•</span>
+        <a href="#signup">Sign up</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section>
+        <p class="chip" aria-label="tagline">🧰 Private mental framework</p>
+        <h2 class="title">
+       
+          <span class="gradient-text">Purge</span> the noise. 
+        </h2>
+        <p class="subtitle">
+          Purge Diary is a framework built for deep thinking and mental clarity.
+          Join the beta to help us shape a more efficient, fluff and gimmick free tool for your headspace. 
+        </p>
+
+        <div class="kpis">
+          <div class="kpi"><strong id="kpi1">0</strong><span>early testers</span></div>
+          <div class="kpi"><strong id="kpi2">0</strong><span>countries</span></div>
+          <div class="kpi"><strong id="kpi3">0</strong><span>spots this month</span></div>
+        </div>
+
+        <div class="features" id="features">
+          <div class="feature">
+            <div>🔒</div>
+            <h3>Your words are yours</h3>
+            <p>Local-first mindset with optional cloud sync. You control what’s stored and when.</p>
+          </div>
+          <div class="feature">
+            <div>🧠</div>
+            <h3>AI that respects you</h3>
+            <p>Insight, not noise. Personas tuned for empathy, clarity and honest thinking.</p>
+          </div>
+          <div class="feature">
+            <div>⚡</div>
+            <h3>Flow over friction</h3>
+            <p>Frictionless capture, powerful sorting, and a journal view that stays out of the way.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card form-card" id="signup">
+        <form id="waitlistForm" novalidate>
+          <h2 class="form-title">Get early access</h2>
+          <p class="form-subtitle">We’re admitting a limited number of testers each week. Tell us where to send your invite.</p>
+
+          <!-- Honeypot -->
+          <div class="sr-only" aria-hidden="true">
+            <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+          </div>
+
+          <div class="form-grid">
+            <div>
+              <label for="name">First name (optional)</label>
+              <input id="name" name="name" type="text" placeholder="Alex" autocomplete="given-name" />
+            </div>
+            <div>
+              <label for="email">Email <span class="sr-only">(required)</span></label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required autocomplete="email" aria-required="true" />
+              <div class="error" id="emailError" aria-live="polite"></div>
+            </div>
+          </div>
+
+          <div class="mt-6">
+            <label for="note">What will you use Purge Diary for? (optional)</label>
+            <textarea id="note" name="note" rows="3" placeholder="E.g., daily reflection, product decisions, therapy journaling..."></textarea>
+          </div>
+
+          <div class="consent mt-6">
+            <input id="consent" name="consent" type="checkbox" required aria-required="true" />
+            <label for="consent">
+              I agree to
