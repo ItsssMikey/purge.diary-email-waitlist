@@ -32,12 +32,11 @@
       <section>
         <p class="chip" aria-label="tagline">🧰 Private mental framework</p>
         <h2 class="title">
-       
-          <span class="gradient-text">Purge</span> the noise. 
+          <span class="gradient-text">Purge</span> the noise.
         </h2>
         <p class="subtitle">
           Purge Diary is a framework built for deep thinking and mental clarity.
-          Join the beta to help us shape a more efficient, fluff and gimmick free tool for your headspace. 
+          Join the beta to help us shape a more efficient, fluff and gimmick free tool for your headspace.
         </p>
 
         <div class="kpis">
@@ -95,4 +94,43 @@
           <div class="consent mt-6">
             <input id="consent" name="consent" type="checkbox" required aria-required="true" />
             <label for="consent">
-              I agree to
+              I agree to be contacted about beta access and product updates.
+              Read our <a href="#" id="privacyLink">Privacy Note</a>.
+            </label>
+          </div>
+          <div class="error" id="consentError" aria-live="polite"></div>
+
+          <div class="actions">
+            <button class="btn" id="submitBtn" type="submit">Request invite</button>
+            <button class="btn ghost" type="button" id="betaTermsBtn">Beta terms</button>
+          </div>
+          <p class="legal">No spam. One-click unsubscribe. We’ll never sell your data.</p>
+        </form>
+
+        <div class="success" id="successBox" role="status" aria-live="polite">
+          <p class="success-title">You’re on the list ✅</p>
+          <p>Thanks for trusting us. We’ll email your invite as soon as a spot opens. Keep an eye on your inbox.</p>
+          <p><a href="#" id="shareLink">Share Purge Diary with a friend</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Purge Diary. Built with care. <span aria-hidden="true">·</span> <a href="#" id="contactLink">Contact</a></p>
+    </footer>
+  </div>
+
+  <!-- Modal -->
+  <dialog id="modal">
+    <div class="modal-header">
+      <strong id="modalTitle">Title</strong>
+      <button id="modalClose" class="btn ghost small">Close</button>
+    </div>
+    <div id="modalBody" class="modal-body"></div>
+  </dialog>
+
+  <div class="confetti" aria-hidden="true" id="confetti"></div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
