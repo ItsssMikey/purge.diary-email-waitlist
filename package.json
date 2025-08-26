@@ -1,5 +1,5 @@
 {
-  "name": "purge-diary-email-waitlist",
+  "name": "purge-landing",
   "private": true,
   "type": "module",
   "dependencies": {
