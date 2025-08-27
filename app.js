@@ -122,7 +122,7 @@ function attachEvents() {
     e.preventDefault();
     showModal('Privacy Note', `
       <p><strong>Your data, your choice.</strong> We only collect what you give us here (name, email, optional note), plus basic metadata (time, browser) to run the waitlist. We use it solely to manage beta access and send product updates. No ads. No third-party resale. You can opt out anytime by replying “unsubscribe”.</p>
-      <p>When the beta ends, we’ll clean up any data that’s no longer needed. For questions, email <a href="mailto:hello@purge.diary">hello@purge.diary</a>.</p>
+      <p>When the beta ends, we’ll clean up any data that’s no longer needed. For questions, email <a href="mailto:hello@purgediary.com">hello@purgediary.com</a>.</p>
     `);
   });
 
