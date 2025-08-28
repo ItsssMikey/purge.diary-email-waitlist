@@ -186,13 +186,32 @@ footer { margin: 48px 0 24px; color: #a3a3a3; font-size: 14px; text-align: cente
 
 
 
-/* Keep nav on one line; only break inside the Sign link */
-header nav { white-space: nowrap; }
-
-/* Let the Sign link break internally on small screens */
-.nav-sign { display: inline-block; }
-.nav-sign .br-m { display: none; }
-
+/* Phone: "Features • Sign" on first line, "up" directly under "Sign" */
 @media (max-width: 430px) {
-  .nav-sign .br-m { display: block; line-height: 0; }
+  header nav { white-space: nowrap; }            /* prevent nav wrap */
+  .nav-sign {
+    display: inline-grid;
+    grid-auto-flow: row;
+    line-height: 1;
+    vertical-align: baseline;
+  }
+  .nav-sign .sp { display: none; }
+  .nav-sign .w1 { grid-row: 1; }
+  .nav-sign .w2 { grid-row: 2; }
+}
+
+
+/* Phone: align the Beta pill text with the nav text */
+@media (max-width: 430px) {
+  header { align-items: baseline; }         /* align brand + nav on the same text baseline */
+  .brand { align-items: baseline; }
+  .brand h1 { line-height: 1; }
+
+  /* Nudge the Beta pill so its text lines up visually with the nav text */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+    transform: translateY(2px); /* tweak ±1px if needed */
+  }
 }
